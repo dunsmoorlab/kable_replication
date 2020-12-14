@@ -14,17 +14,18 @@ rcParams['savefig.dpi'] = 300
 cpal = ['darkorange','grey']
 
 '''experiment 2 (1B)'''
-data_dir = 'Exp_1B'
+experiment = 'Exp_1B'
 
 dfs = {}
-for file in os.listdir(data_dir):
+for file in os.listdir(experiment):
     if 'phase_4' in file and '.csv' in file:
         sub = int(file.split('_phase')[0].split('vp_')[1])
         csp = 'animal' if 'animals' in file else 'tool'
-        dfs[sub] = pd.read_csv(f'{data_dir}/{file}')
+        dfs[sub] = pd.read_csv(f'{experiment}/{file}')
         dfs[sub]['subject'] = sub
         dfs[sub]['condition'] = dfs[sub]['object'].apply(lambda x: 'CS+' if x == csp else 'CS-')
 df = pd.concat(dfs.values())
+df.to_csv(f'{experiment}_data.csv')
 
 df['low_hit'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [1,2] else 0)
 df['high_hit'] = df.buttonPressedCertainty.apply(lambda x: 1 if x == 1 else 0)
