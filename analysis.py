@@ -41,6 +41,7 @@ for exp in [2,3,4]:
 
         anova = pg.rm_anova(data=cr.reset_index(),dv=conf,within=['phase','condition'],subject='subject')[['Source','ddof1','ddof2','F','p-unc','np2']]
         print(f'{conf_str} confidence corrected recognition repeated measures ANOVA')
+        anova['sig'] = anova['p-unc'].apply(p_convert)
         pg.print_table(anova,floatfmt=".2e",tablefmt="github")
         anova.to_csv(f'stats/{experiment}_{conf_str}_confidence_anova_stats.csv',index=False)
 

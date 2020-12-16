@@ -8,11 +8,11 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 
 ## Low confidence
 ### ANOVA
-| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 |
-|-------------------|---------|---------|----------|----------|----------|
-| phase             |       2 |     158 | 2.69e+01 | 9.15e-11 | 2.54e-01 |
-| condition         |       1 |      79 | 1.70e+01 | 9.03e-05 | 1.77e-01 |
-| phase * condition |       2 |     158 | 6.66e+00 | 1.67e-03 | 7.77e-02 |
+| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 | sig   |
+|-------------------|---------|---------|----------|----------|----------|-------|
+| phase             |       2 |     158 | 2.69e+01 | 9.15e-11 | 2.54e-01 | ***   |
+| condition         |       1 |      79 | 1.70e+01 | 9.03e-05 | 1.77e-01 | ***   |
+| phase * condition |       2 |     158 | 6.66e+00 | 1.67e-03 | 7.77e-02 | **    |
 
 ### T-tests
 |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
@@ -23,11 +23,11 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 
 ## High confidence
 ### Anova
-| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 |
-|-------------------|---------|---------|----------|----------|----------|
-| phase             |       2 |     158 | 1.75e+01 | 1.38e-07 | 1.81e-01 |
-| condition         |       1 |      79 | 2.99e+01 | 5.07e-07 | 2.75e-01 |
-| phase * condition |       2 |     158 | 1.15e+01 | 2.16e-05 | 1.27e-01 |
+| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 | sig   |
+|-------------------|---------|---------|----------|----------|----------|-------|
+| phase             |       2 |     158 | 1.75e+01 | 1.38e-07 | 1.81e-01 | ***   |
+| condition         |       1 |      79 | 2.99e+01 | 5.07e-07 | 2.75e-01 | ***   |
+| phase * condition |       2 |     158 | 1.15e+01 | 2.16e-05 | 1.27e-01 | ***   |
 
 ### T-tests
 |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
@@ -44,11 +44,11 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 
 ## Low confidence
 ### ANOVA
-| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 |
-|-------------------|---------|---------|----------|----------|----------|
-| phase             |       2 |     154 | 3.57e+01 | 1.81e-13 | 3.17e-01 |
-| condition         |       1 |      77 | 1.78e+01 | 6.50e-05 | 1.88e-01 |
-| phase * condition |       2 |     154 | 2.21e+01 | 3.59e-09 | 2.23e-01 |
+| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 | sig   |
+|-------------------|---------|---------|----------|----------|----------|-------|
+| phase             |       2 |     154 | 3.57e+01 | 1.81e-13 | 3.17e-01 | ***   |
+| condition         |       1 |      77 | 1.78e+01 | 6.50e-05 | 1.88e-01 | ***   |
+| phase * condition |       2 |     154 | 2.21e+01 | 3.59e-09 | 2.23e-01 | ***   |
 
 ### T-tests
 |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
@@ -59,11 +59,11 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 
 ## High confidence
 ### Anova
-| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 |
-|-------------------|---------|---------|----------|----------|----------|
-| phase             |       2 |     154 | 1.77e+01 | 1.18e-07 | 1.87e-01 |
-| condition         |       1 |      77 | 1.07e+01 | 1.62e-03 | 1.22e-01 |
-| phase * condition |       2 |     154 | 1.95e+01 | 2.83e-08 | 2.02e-01 |
+| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 | sig   |
+|-------------------|---------|---------|----------|----------|----------|-------|
+| phase             |       2 |     154 | 1.77e+01 | 1.18e-07 | 1.87e-01 | ***   |
+| condition         |       1 |      77 | 1.07e+01 | 1.62e-03 | 1.22e-01 | **    |
+| phase * condition |       2 |     154 | 1.95e+01 | 2.83e-08 | 2.02e-01 | ***   |
 
 ### T-tests
 |         T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
@@ -79,11 +79,11 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 
 ## Low confidence
 ### ANOVA
-| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 |
-|-------------------|---------|---------|----------|----------|----------|
-| phase             |       2 |     164 | 1.82e+01 | 7.30e-08 | 1.82e-01 |
-| condition         |       1 |      82 | 1.76e+01 | 6.82e-05 | 1.77e-01 |
-| phase * condition |       2 |     164 | 1.02e+01 | 6.77e-05 | 1.10e-01 |
+| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 | sig   |
+|-------------------|---------|---------|----------|----------|----------|-------|
+| phase             |       2 |     164 | 1.82e+01 | 7.30e-08 | 1.82e-01 | ***   |
+| condition         |       1 |      82 | 1.76e+01 | 6.82e-05 | 1.77e-01 | ***   |
+| phase * condition |       2 |     164 | 1.02e+01 | 6.77e-05 | 1.10e-01 | ***   |
 
 ### T-tests
 |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
@@ -94,11 +94,11 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 
 ## High confidence
 ### Anova
-| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 |
-|-------------------|---------|---------|----------|----------|----------|
-| phase             |       2 |     164 | 1.15e+01 | 2.13e-05 | 1.23e-01 |
-| condition         |       1 |      82 | 2.45e+01 | 3.94e-06 | 2.30e-01 |
-| phase * condition |       2 |     164 | 2.17e+01 | 4.26e-09 | 2.09e-01 |
+| Source            |   ddof1 |   ddof2 |        F |    p-unc |      np2 | sig   |
+|-------------------|---------|---------|----------|----------|----------|-------|
+| phase             |       2 |     164 | 1.15e+01 | 2.13e-05 | 1.23e-01 | ***   |
+| condition         |       1 |      82 | 2.45e+01 | 3.94e-06 | 2.30e-01 | ***   |
+| phase * condition |       2 |     164 | 2.17e+01 | 4.26e-09 | 2.09e-01 | ***   |
 
 ### T-tests
 |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
