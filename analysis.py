@@ -49,7 +49,7 @@ for exp in [2,3,4]:
         stats['sig'] = stats['p-val'].apply(p_convert)
         print(f'{conf_str} confidence corrected recognition CS+ vs. CS- ttests')
         stats = stats[['T','dof','tail','p-val','cohen-d','BF10','sig']]
-        pg.print_table(stats,floatfmt=".2e",tablefmt="github")
+        pg.print_table(stats.reset_index().drop(columns='level_1'),floatfmt=".2e",tablefmt="github")
         stats.to_csv(f'stats/{experiment}_{conf_str}_confidence_ttest_stats.csv',index=True)
 
         upper = [line.get_ydata().max() for line in ax[c].lines]
