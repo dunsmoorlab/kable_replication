@@ -41,14 +41,14 @@ for exp in [2,3,4]:
 
         anova = pg.rm_anova(data=cr.reset_index(),dv=conf,within=['phase','condition'],subject='subject')[['Source','ddof1','ddof2','F','p-unc','np2']]
         print(f'{conf_str} confidence corrected recognition repeated measures ANOVA')
-        print(anova)
+        pg.print_table(anova,floatfmt=".2e",tablefmt="github")
         anova.to_csv(f'stats/{experiment}_{conf_str}_confidence_anova_stats.csv',index=False)
 
         stats = cr.groupby('phase').apply(lambda x: pg.ttest(x.loc[('CS+'),conf], x.loc[('CS-'),conf],paired=True))
         stats['sig'] = stats['p-val'].apply(p_convert)
         print(f'{conf_str} confidence corrected recognition CS+ vs. CS- ttests')
         stats = stats[['T','dof','tail','p-val','cohen-d','BF10','sig']]
-        print(stats)
+        pg.print_table(stats,floatfmt=".2e",tablefmt="github")
         stats.to_csv(f'stats/{experiment}_{conf_str}_confidence_ttest_stats.csv',index=True)
 
         upper = [line.get_ydata().max() for line in ax[c].lines]
