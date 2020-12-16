@@ -1,0 +1,21 @@
+Phase 4 refers to data collected in the surprise recognition test on day 2.
+
+Variables:
+01. trial - trial no.
+02. phase - experimental phase the current picture was FIRST presented in
+03. object - type of picture presented in trial (either animal or tool)
+04. toShock - whether a shock should be administered in this trial (constant @ 0 in this phase)
+05. seenBefore - whether the current picture had been seen before (0 for no, 1 for yes)
+06. shockedCategory - the CS+ category for the current participant
+07. filename - filename of the picture presented in the current trial
+08. num - picture no. in the current tiral
+09. name - (unused)
+10. onsetFixationCross - onset of the fixation cross relative to the start of the experiment (in seconds)
+11. onsetFocedChoiceOptions - onset of the old vs. new decision screen relative to the start of the experiment (in seconds)
+12. onsetCertaintyOptions - onset of the certainty option screen relative to the start of the experiment (in seconds)
+13. interTrialTime - ITI (in seconds)
+14. wasShocked - whether a shock was administered in the current trial (constant @ 0 in this phase)
+15. buttonPressedForcedChoice - raw button press for the old vs. new decision (1 for left arrow; 2 for right arrow)
+16. forcedChoiceRT - RT for 15
+17. buttonPressedCertainty - raw button for the certainty option screen (1, 2, 3, and 4 buttons on the keyboard)
+18. certaintyRT - RT for 17

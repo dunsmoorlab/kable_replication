@@ -1,0 +1,20 @@
+Phase 2 refers to data collected on day 1 during Pavlovian fear conditioning.
+
+Variables:
+01. trial - trial no.
+02. phase - experimental phase (constant @ 2)
+03. object - type of image presented in trial (either animal or tool)
+04. toShock - whether a shock should be administered in this trial (0 for no-shock, 1 for shock)
+05. seenBefore - whether the current picture had been seen before (0 for no, 1 for yes; constant @ 0 for this phase)
+06. shockedCategory - the CS+ category for the current participant
+07. filename - filename of the picture presented in the current trial
+08. num - picture no. in the current tiral
+09. name - (unused)
+10. onsetFixationCross - onset of the fixation cross relative to the start of the experiment (in seconds)
+11. onsetStimulus - onset of the picture relative to the start of the experiment (in seconds)
+12. interTrialTime - ITI (in seconds)
+13. response - shock expectancy (0 for no shock; 1 for shock)
+14. reactionTime - RT for the shock expectancy button press (in seconds)
+15. wasShocked - whether a shock was administered in the current trial (= toShock)
+16. buttonPressed - raw button press (1 for left arrow; 2 for right arrow)
+17. isResponseCorrect - whether the possible occurance of the shock was correctly predicted in this trial (0 for incorrect; 1 for correct)

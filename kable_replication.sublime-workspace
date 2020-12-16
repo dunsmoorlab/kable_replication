@@ -520,18 +520,19 @@
 	"buffers":
 	[
 		{
-			"file": "Exp_1B/__phase_4_data_format.txt",
-			"settings":
-			{
-				"buffer_size": 1250,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "analysis.py",
 			"settings":
 			{
-				"buffer_size": 1781,
+				"buffer_size": 2460,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.py",
+			"settings":
+			{
+				"buffer_size": 2019,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -645,6 +646,7 @@
 	},
 	"file_history":
 	[
+		"/Users/ach3377/Documents/kable_replication/Exp_1B/__phase_4_data_format.txt",
 		"/Users/ach3377/Documents/kable_replication/Exp_4/__phase_4_data_format.txt",
 		"/Users/ach3377/Documents/gPPI/circuit_model.py",
 		"/Users/ach3377/Documents/gPPI/graphing_functions.py",
@@ -771,8 +773,7 @@
 		"/C/Users/ACH/Desktop/fc_dcm/FC001/FC001_Localizer_1_20170905190536_13.json",
 		"/C/Users/ACH/Desktop/fc-bids/sub-FC001/func/sub-FC001_task-renewal_bold.json",
 		"/C/Users/ACH/Desktop/fc_dcm/tmp_dcm2bids/helper/006_FC001_Baseline_20170904190958.json",
-		"/C/Users/ACH/Desktop/fc_dcm/tmp_dcm2bids/helper/003_FC001_AAHScout_20170905190536_i00003.json",
-		"/C/Users/ACH/Desktop/fc_dcm/tmp_dcm2bids/helper/005_FC001_MPRAGE_20170904190958.json"
+		"/C/Users/ACH/Desktop/fc_dcm/tmp_dcm2bids/helper/003_FC001_AAHScout_20170905190536_i00003.json"
 	],
 	"find":
 	{
@@ -790,6 +791,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"y_lim",
+			"ylim",
 			"button"
 		],
 		"highlight": true,
@@ -808,53 +811,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Exp_1B/__phase_4_data_format.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1250,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1196,
-								1083
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "analysis.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1781,
+						"buffer_size": 2460,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1773,
-								1773
+								2161,
+								2161
 							]
 						],
 						"settings":
@@ -864,10 +838,41 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 528.0,
+						"translation.y": 494.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1729,
+								1671
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 983.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1127,19 +1132,19 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "fear",
 		"selected_items":
 		[
+			[
+				"fear",
+				"~/Documents/fearmem/analysis/fearmem.sublime-project"
+			],
 			[
 				"",
 				"~/Documents/fearmem/analysis/fearmem.sublime-project"
 			],
 			[
 				"fesa",
-				"~/Documents/fearmem/analysis/fearmem.sublime-project"
-			],
-			[
-				"fear",
 				"~/Documents/fearmem/analysis/fearmem.sublime-project"
 			],
 			[
