@@ -3,8 +3,9 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 
 # Experiment 2
 <p align="center">
-    <img src="https://github.com/dunsmoorlab/kable_replication/figures/Exp_2_results.png" width="60%" alt="Experiment 1 Results" /><br>
+    <img src="figures/Exp_2_results.png" width="60%" alt="Experiment 1 Results" /><br>
 </p>
+
 ## Low confidence
 ### ANOVA
 | Source            | ddof1 | ddof2 | F                  | p-unc                 | np2                 | 
