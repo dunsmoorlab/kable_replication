@@ -12,6 +12,8 @@ rcParams['font.family'] = 'sans-serif'
 rcParams['font.sans-serif'] = 'Arial'
 rcParams['savefig.dpi'] = 300
 cpal = ['darkorange','grey']
+legend_elements = [Patch(facecolor=cpal[0],edgecolor=None,label='CS+'),
+                   Patch(facecolor=cpal[1],edgecolor=None,label='CS-')]
 
 p_convert = lambda pval: "*" * sum([ pval < cutoff for cutoff in [.05,.01,.001] ]) #converts pval to asterisks
 def paired_barplot_annotate_brackets(txt, x_tick, height, y_lim, dh=.05, barh=.05, fs=10, maxasterix=None, ax=None):
