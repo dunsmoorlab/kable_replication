@@ -2,9 +2,13 @@ import os
 import pandas as pd
 import pingouin as pg
 import seaborn as sns
+import numpy as np
 import matplotlib.pyplot as plt
+
 from matplotlib import rcParams
 from matplotlib.patches import Patch
+from scipy.stats import iqr
+
 '''settings'''
 sns.set_context('notebook',font_scale=1.4)
 sns.set_style('ticks', {'axes.spines.right':False, 'axes.spines.top':False})
@@ -15,7 +19,14 @@ cpal = ['darkorange','grey']
 legend_elements = [Patch(facecolor=cpal[0],edgecolor=None,label='CS+'),
                    Patch(facecolor=cpal[1],edgecolor=None,label='CS-')]
 
-p_convert = lambda pval: "*" * sum([ pval < cutoff for cutoff in [.05,.01,.001] ]) #converts pval to asterisks
+def p_convert(pval):  #converts pval to asterisks
+    if pval < .05:
+        return "*" * sum([ pval < cutoff for cutoff in [.05,.01,.001] ])
+    elif pval < .1:
+        return '~'
+    else:
+        return ''
+
 def paired_barplot_annotate_brackets(txt, x_tick, height, y_lim, dh=.05, barh=.05, fs=10, maxasterix=None, ax=None):
     """ 
     Annotate barplot with p-values.
@@ -70,3 +81,22 @@ def paired_barplot_annotate_brackets(txt, x_tick, height, y_lim, dh=.05, barh=.0
         kwargs['fontsize'] = fs
 
     ax.text(*mid, text, **kwargs)
+
+def identify_outliers(x):
+    """Takes in array x, and identifies outliers.
+    Assumes that the index is the subject number.
+    Outliers are defined by data that are beyond
+    1.5*Inter Quartile Range in either direction. 
+    """
+    outliers = np.array([])
+
+    IQR = iqr(x)
+    low_cut = np.percentile(x,25) - 1.5*IQR
+    high_cut = np.percentile(x,75) + 1.5*IQR
+
+    for sub in x.index:
+        if x.loc[sub] < low_cut or x.loc[sub] > high_cut:
+            # outliers = np.append(outliers,np.asarray(x == i).nonzero()[0])
+            outliers = np.append(outliers,sub)
+
+    return outliers

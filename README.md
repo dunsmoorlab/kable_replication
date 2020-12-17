@@ -49,6 +49,25 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 |       2 | Wilcoxon | 2.90e-07 | 6.79e-01 | ***   |
 |       3 | Wilcoxon | 3.61e-04 | 6.19e-01 | ***   |
 
+## Identifying outliers in the CS+ vs. CS- difference 
+<p align="center">
+    <img src="figures/Exp_2_diff_boxplot.png" width="90%" alt="Experiment 2 boxplot" /><br>
+</p>
+
+### Low and High confidence ttests without ouliers
+|   phase |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
+|---------|----------|-------|-----------|----------|-----------|----------|-------|
+|       1 | 1.76e+00 |    76 | two-sided | 8.19e-02 |  1.74e-01 | 1.09e+00 | ~     |
+|       2 | 4.89e+00 |    79 | two-sided | 5.21e-06 |  5.23e-01 | 6.22e+03 | ***   |
+|       3 | 3.88e+00 |    72 | two-sided | 2.28e-04 |  3.34e-01 | 1.92e+02 | ***   |
+
+### High confidence ttests without outliers
+|   phase |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
+|---------|----------|-------|-----------|----------|-----------|----------|-------|
+|       1 | 3.23e+00 |    77 | two-sided | 1.80e-03 |  2.87e-01 | 2.88e+01 | **    |
+|       2 | 6.08e+00 |    79 | two-sided | 4.10e-08 |  6.86e-01 | 6.06e+05 | ***   |
+|       3 | 3.88e+00 |    79 | two-sided | 2.12e-04 |  4.09e-01 | 1.99e+02 | ***   |
+
 ---
 # Experiment 3
 <p align="center">
@@ -75,7 +94,7 @@ Low and High confidence corrected recognition CS+ vs. CS- ttests
 |---------|----------|-------|-----------|----------|-----------|----------|-------|
 |       1 | 1.73e-01 |    77 | two-sided | 8.63e-01 |  1.89e-02 | 2.54e-01 |       |
 |       2 | 6.60e+00 |    77 | two-sided | 4.78e-09 |  7.74e-01 | 4.73e+06 | ***   |
-|       3 | 1.90e+00 |    77 | two-sided | 6.07e-02 |  1.90e-01 | 1.38e+00 |       |
+|       3 | 1.90e+00 |    77 | two-sided | 6.07e-02 |  1.90e-01 | 1.38e+00 | ~     |
 
 ## High confidence
 ### Anova
@@ -97,7 +116,26 @@ Low and High confidence corrected recognition CS+ vs. CS- ttests
 |---------|----------|----------|----------|-------|
 |       1 | Wilcoxon | 1.41e-01 | 4.72e-01 |       |
 |       2 | Wilcoxon | 2.74e-06 | 6.96e-01 | ***   |
-|       3 | Wilcoxon | 7.43e-02 | 5.38e-01 |       |
+|       3 | Wilcoxon | 7.43e-02 | 5.38e-01 | ~     |
+
+## Identifying outliers in the CS+ vs. CS- difference 
+<p align="center">
+    <img src="figures/Exp_3_diff_boxplot.png" width="90%" alt="Experiment 3 boxplot" /><br>
+</p>
+
+### Low and High confidence ttests without ouliers
+|   phase |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
+|---------|----------|-------|-----------|----------|-----------|----------|-------|
+|       1 | 1.73e-01 |    77 | two-sided | 8.63e-01 |  1.89e-02 | 2.54e-01 |       |
+|       2 | 6.60e+00 |    77 | two-sided | 4.78e-09 |  7.74e-01 | 4.73e+06 | ***   |
+|       3 | 1.90e+00 |    77 | two-sided | 6.07e-02 |  1.90e-01 | 1.38e+00 | ~     |
+
+### High confidence ttests without outliers
+|   phase |         T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
+|---------|-----------|-------|-----------|----------|-----------|----------|-------|
+|       1 | -1.86e+00 |    75 | two-sided | 6.73e-02 |  1.72e-01 | 1.29e+00 | ~     |
+|       2 |  5.89e+00 |    76 | two-sided | 1.01e-07 |  6.88e-01 | 2.61e+05 | ***   |
+|       3 |  2.38e+00 |    75 | two-sided | 1.98e-02 |  2.36e-01 | 3.55e+00 | *     |
 
 ---
 # Experiment 4
@@ -124,7 +162,7 @@ Low and High confidence corrected recognition CS+ vs. CS- ttests
 |---------|----------|-------|-----------|----------|-----------|----------|-------|
 |       1 | 1.37e+00 |    82 | two-sided | 1.76e-01 |  1.37e-01 | 5.92e-01 |       |
 |       2 | 5.75e+00 |    82 | two-sided | 1.48e-07 |  5.77e-01 | 1.77e+05 | ***   |
-|       3 | 1.71e+00 |    82 | two-sided | 9.11e-02 |  1.65e-01 | 9.74e-01 |       |
+|       3 | 1.71e+00 |    82 | two-sided | 9.11e-02 |  1.65e-01 | 9.74e-01 | ~     |
 
 ## High confidence
 ### Anova
@@ -137,13 +175,32 @@ Low and High confidence corrected recognition CS+ vs. CS- ttests
 ### T-tests
 |   phase |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
 |---------|----------|-------|-----------|----------|-----------|----------|-------|
-|       1 | 1.73e+00 |    82 | two-sided | 8.83e-02 |  1.90e-01 | 9.98e-01 |       |
+|       1 | 1.73e+00 |    82 | two-sided | 8.83e-02 |  1.90e-01 | 9.98e-01 | ~     |
 |       2 | 7.24e+00 |    82 | two-sided | 2.15e-10 |  7.91e-01 | 9.12e+07 | ***   |
-|       3 | 1.75e+00 |    82 | two-sided | 8.41e-02 |  1.60e-01 | 1.04e+00 |       |
+|       3 | 1.75e+00 |    82 | two-sided | 8.41e-02 |  1.60e-01 | 1.04e+00 | ~     |
 
 ### Wilcoxon sign-ranked test
 |   phase | test     |    p-val |     CLES | sig   |
 |---------|----------|----------|----------|-------|
 |       1 | Wilcoxon | 1.67e-01 | 5.41e-01 |       |
 |       2 | Wilcoxon | 7.28e-09 | 7.04e-01 | ***   |
-|       3 | Wilcoxon | 9.84e-02 | 5.53e-01 |       |
+|       3 | Wilcoxon | 9.84e-02 | 5.53e-01 | ~     |
+
+## Identifying outliers in the CS+ vs. CS- difference 
+<p align="center">
+    <img src="figures/Exp_4_diff_boxplot.png" width="90%" alt="Experiment 4 boxplot" /><br>
+</p>
+
+### Low and High confidence ttests without ouliers
+|   phase |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
+|---------|----------|-------|-----------|----------|-----------|----------|-------|
+|       1 | 1.46e+00 |    80 | two-sided | 1.50e-01 |  1.38e-01 | 6.74e-01 |       |
+|       2 | 5.75e+00 |    82 | two-sided | 1.48e-07 |  5.77e-01 | 1.77e+05 | ***   |
+|       3 | 1.71e+00 |    82 | two-sided | 9.11e-02 |  1.65e-01 | 9.74e-01 | ~     |
+
+### High confidence ttests without outliers
+|   phase |        T |   dof | tail      |    p-val |   cohen-d |     BF10 | sig   |
+|---------|----------|-------|-----------|----------|-----------|----------|-------|
+|       1 | 1.60e+00 |    79 | two-sided | 1.13e-01 |  1.58e-01 | 8.40e-01 |       |
+|       2 | 7.24e+00 |    82 | two-sided | 2.15e-10 |  7.91e-01 | 9.12e+07 | ***   |
+|       3 | 1.48e+00 |    81 | two-sided | 1.41e-01 |  1.31e-01 | 6.98e-01 |       |
