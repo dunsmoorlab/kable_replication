@@ -68,6 +68,21 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 |       2 | 6.08e+00 |    79 | two-sided | 4.10e-08 |  6.86e-01 | 6.06e+05 | ***   |
 |       3 | 3.88e+00 |    79 | two-sided | 2.12e-04 |  4.09e-01 | 1.99e+02 | ***   |
 
+## Experiment 2 MLM
+### Low and High confidence
+| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
+|-----------------------|------------|-----------|------------|-------|
+| condition1:phaseone   |   1.08e-01 |  1.41e+00 |   1.58e-01 |       |
+| condition1:phasetwo   |   4.13e-01 |  5.41e+00 |   6.33e-08 | ***   |
+| condition1:phasethree |   2.11e-01 |  2.83e+00 |   4.64e-03 | **    |
+
+### High confidence
+| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
+|-----------------------|------------|-----------|------------|-------|
+| condition1:phaseone   |   1.92e-01 |  2.12e+00 |   3.40e-02 | *     |
+| condition1:phasetwo   |   6.00e-01 |  6.59e+00 |   4.51e-11 | ***   |
+| condition1:phasethree |   3.15e-01 |  3.40e+00 |   6.66e-04 | ***   |
+
 ---
 # Experiment 3
 <p align="center">
@@ -137,6 +152,21 @@ Low and High confidence corrected recognition CS+ vs. CS- ttests
 |       2 |  5.89e+00 |    76 | two-sided | 1.01e-07 |  6.88e-01 | 2.61e+05 | ***   |
 |       3 |  2.38e+00 |    75 | two-sided | 1.98e-02 |  2.36e-01 | 3.55e+00 | *     |
 
+## Experiment 3 MLM
+### Low and High confidence
+| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
+|-----------------------|------------|-----------|------------|-------|
+| condition1:phaseone   |  -2.11e-02 | -2.66e-01 |   7.91e-01 |       |
+| condition1:phasetwo   |   6.97e-01 |  8.62e+00 |   6.74e-18 | ***   |
+| condition1:phasethree |   1.31e-01 |  1.70e+00 |   8.88e-02 | ~     |
+
+### High confidence
+| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
+|-----------------------|------------|-----------|------------|-------|
+| condition1:phaseone   |  -1.82e-01 | -1.92e+00 |   5.52e-02 | ~     |
+| condition1:phasetwo   |   5.21e-01 |  5.47e+00 |   4.52e-08 | ***   |
+| condition1:phasethree |   8.81e-02 |  9.10e-01 |   3.63e-01 |       |
+
 ---
 # Experiment 4
 <p align="center">
@@ -204,3 +234,19 @@ Low and High confidence corrected recognition CS+ vs. CS- ttests
 |       1 | 1.60e+00 |    79 | two-sided | 1.13e-01 |  1.58e-01 | 8.40e-01 |       |
 |       2 | 7.24e+00 |    82 | two-sided | 2.15e-10 |  7.91e-01 | 9.12e+07 | ***   |
 |       3 | 1.48e+00 |    81 | two-sided | 1.41e-01 |  1.31e-01 | 6.98e-01 |       |
+
+## Experiment 4 MLM
+### Low and High confidence
+| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
+|-----------------------|------------|-----------|------------|-------|
+| condition1:phaseone   |   9.08e-02 |  1.22e+00 |   2.22e-01 |       |
+| condition1:phasetwo   |   5.32e-01 |  7.01e+00 |   2.46e-12 | ***   |
+| condition1:phasethree |   1.30e-01 |  1.77e+00 |   7.65e-02 | ~     |
+
+### High confidence
+| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
+|-----------------------|------------|-----------|------------|-------|
+| condition1:phaseone   |   8.18e-02 |  9.37e-01 |   3.49e-01 |       |
+| condition1:phasetwo   |   6.24e-01 |  7.15e+00 |   8.84e-13 | ***   |
+| condition1:phasethree |   8.76e-02 |  9.91e-01 |   3.22e-01 |       |
+

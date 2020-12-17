@@ -1,22 +1,24 @@
 require(lme4)
 require(lmerTest)
-require(emmeans)
 require(dplyr)
-afex::set_sum_contrasts()
 
 setwd('/Users/ach3377/Documents/kable_replication')
-df <- read.csv('Exp_2_data.csv')
-
-#im not sure the following is necessary as just including factor(phase) uses 4 as the reference, which is what we want
-df$phase <- as.factor(df$phase)
-df$phase <- relevel(df$phase, ref = "4")
+df <- read.csv('Exp_4_data.csv')
 
 df <- df %>% 
     mutate(condition = recode(condition, 
-                    "CS-" = 0, 
-                    "CS+" = 1))
+                    "CS-" = "0", 
+                    "CS+" = "1"),
+            phase = recode(phase,
+                     "1" = "one",
+                     "2" = "two",
+                     "3" = "three",
+                     "4" = "four"))
 
-mod <- glmer(Low_and_High ~ condition*factor(phase)+(1|subject), family="binomial", data=df)
-summary(mod)
+low_and_high <- glmer(Low_and_High ~ condition*phase + (1|subject) + (1|filename), family="binomial", data=df)
+low_and_high.summ <- summary(low_and_high)
+write.csv(low_and_high.summ$coefficients,'stats/Exp_4_Low_and_High_MLM_stats.csv')
 
-emmeans(mod,pairwise ~ condition,adjust="None")
+high <- glmer(High ~ condition*phase + (1|subject) + (1|filename), family="binomial", data=df)
+high.summary <- summary(high)
+write.csv(high.summary$coefficients,'stats/Exp_4_High_MLM_stats.csv')
