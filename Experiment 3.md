@@ -68,15 +68,15 @@ Low and High confidence corrected recognition CS+ vs. CS- ttests
 
 ## Experiment 3 MLM
 ### Low and High confidence
-| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
-|-----------------------|------------|-----------|------------|-------|
-| condition1:phaseone   |  -2.11e-02 | -2.66e-01 |   7.91e-01 |       |
-| condition1:phasetwo   |   6.97e-01 |  8.62e+00 |   6.74e-18 | ***   |
-| condition1:phasethree |   1.31e-01 |  1.70e+00 |   8.88e-02 | ~     |
+| Effect                |   Estimate |   z value |    p-val | sig   |
+|-----------------------|------------|-----------|----------|-------|
+| condition1:phaseone   |  -2.11e-02 | -2.66e-01 | 7.91e-01 |       |
+| condition1:phasetwo   |   6.97e-01 |  8.62e+00 | 6.74e-18 | ***   |
+| condition1:phasethree |   1.31e-01 |  1.70e+00 | 8.88e-02 | ~     |
 
 ### High confidence
-| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
-|-----------------------|------------|-----------|------------|-------|
-| condition1:phaseone   |  -1.82e-01 | -1.92e+00 |   5.52e-02 | ~     |
-| condition1:phasetwo   |   5.21e-01 |  5.47e+00 |   4.52e-08 | ***   |
-| condition1:phasethree |   8.81e-02 |  9.10e-01 |   3.63e-01 |       |
+| Effect                |   Estimate |   z value |    p-val | sig   |
+|-----------------------|------------|-----------|----------|-------|
+| condition1:phaseone   |  -1.82e-01 | -1.92e+00 | 5.52e-02 | ~     |
+| condition1:phasetwo   |   5.21e-01 |  5.47e+00 | 4.52e-08 | ***   |
+| condition1:phasethree |   8.81e-02 |  9.10e-01 | 3.63e-01 |       |

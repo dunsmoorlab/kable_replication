@@ -70,20 +70,18 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 
 ## Experiment 2 MLM
 ### Low and High confidence
-
-| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
-|-----------------------|------------|-----------|------------|-------|
-| condition1:phaseone   |   1.08e-01 |  1.41e+00 |   1.58e-01 |       |
-| condition1:phasetwo   |   4.13e-01 |  5.41e+00 |   6.33e-08 | ***   |
-| condition1:phasethree |   2.11e-01 |  2.83e+00 |   4.64e-03 | **    |
+| Effect                |   Estimate |   z value |    p-val | sig   |
+|-----------------------|------------|-----------|----------|-------|
+| condition1:phaseone   |   1.08e-01 |  1.41e+00 | 1.58e-01 |       |
+| condition1:phasetwo   |   4.13e-01 |  5.41e+00 | 6.33e-08 | ***   |
+| condition1:phasethree |   2.11e-01 |  2.83e+00 | 4.64e-03 | **    |
 
 ### High confidence
-
-| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
-|-----------------------|------------|-----------|------------|-------|
-| condition1:phaseone   |   1.92e-01 |  2.12e+00 |   3.40e-02 | *     |
-| condition1:phasetwo   |   6.00e-01 |  6.59e+00 |   4.51e-11 | ***   |
-| condition1:phasethree |   3.15e-01 |  3.40e+00 |   6.66e-04 | ***   |
+| Effect                |   Estimate |   z value |    p-val | sig   |
+|-----------------------|------------|-----------|----------|-------|
+| condition1:phaseone   |   1.92e-01 |  2.12e+00 | 3.40e-02 | *     |
+| condition1:phasetwo   |   6.00e-01 |  6.59e+00 | 4.51e-11 | ***   |
+| condition1:phasethree |   3.15e-01 |  3.40e+00 | 6.66e-04 | ***   |
 
 ---
 # Experiment 4
@@ -156,17 +154,17 @@ Replicating analyses for this project: https://osf.io/qpm3t/
 ## Experiment 4 MLM
 ### Low and High confidence
 
-| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
-|-----------------------|------------|-----------|------------|-------|
-| condition1:phaseone   |   9.08e-02 |  1.22e+00 |   2.22e-01 |       |
-| condition1:phasetwo   |   5.32e-01 |  7.01e+00 |   2.46e-12 | ***   |
-| condition1:phasethree |   1.30e-01 |  1.77e+00 |   7.65e-02 | ~     |
+| Effect                |   Estimate |   z value |    p-val | sig   |
+|-----------------------|------------|-----------|----------|-------|
+| condition1:phaseone   |   9.08e-02 |  1.22e+00 | 2.22e-01 |       |
+| condition1:phasetwo   |   5.32e-01 |  7.01e+00 | 2.46e-12 | ***   |
+| condition1:phasethree |   1.30e-01 |  1.77e+00 | 7.65e-02 | ~     |
 
 ### High confidence
 
-| Effect                |   Estimate |   z value |   Pr(>|z|) | sig   |
-|-----------------------|------------|-----------|------------|-------|
-| condition1:phaseone   |   8.18e-02 |  9.37e-01 |   3.49e-01 |       |
-| condition1:phasetwo   |   6.24e-01 |  7.15e+00 |   8.84e-13 | ***   |
-| condition1:phasethree |   8.76e-02 |  9.91e-01 |   3.22e-01 |       |
+| Effect                |   Estimate |   z value |    p-val | sig   |
+|-----------------------|------------|-----------|----------|-------|
+| condition1:phaseone   |   8.18e-02 |  9.37e-01 | 3.49e-01 |       |
+| condition1:phasetwo   |   6.24e-01 |  7.15e+00 | 8.84e-13 | ***   |
+| condition1:phasethree |   8.76e-02 |  9.91e-01 | 3.22e-01 |       |
 
