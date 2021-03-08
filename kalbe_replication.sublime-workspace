@@ -523,8 +523,16 @@
 			"file": "response_analysis.py",
 			"settings":
 			{
-				"buffer_size": 7310,
+				"buffer_size": 7369,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/ACH/Documents/gPPI/bids_model.py",
+			"settings":
+			{
+				"buffer_size": 29370,
 				"line_ending": "Windows"
 			}
 		}
@@ -641,6 +649,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/ACH/Documents/kalbe_replication/Experiment 3.md",
+		"/C/Users/ACH/Documents/kalbe_replication/author_response.md",
 		"/C/Users/ACH/Documents/etsg/analysis/config.py",
 		"/C/Users/ACH/Documents/etsg/analysis/utils.py",
 		"/C/Users/ACH/Documents/etsg/analysis/acq_analysis.py",
@@ -766,9 +776,7 @@
 		"/C/Users/ACH/Desktop/fc_dcm/FC001/FC001_Localizer_1_20170905190536_14.json",
 		"/C/Users/ACH/Dropbox (LewPeaLab)/STUDY/FearCon/CodeBase/fc_config.py",
 		"/C/Users/ACH/Desktop/fc_bids.py",
-		"/C/Users/ACH/Desktop/fc-bids/sub-FC001/ses-1/anat/sub-FC001_ses-1_run-01_T1w.json",
-		"/C/Users/ACH/Dropbox (LewPeaLab)/STUDY/FearCon/CodeBase/fc_bids.py",
-		"/C/Users/ACH/Desktop/fc-bids/sub-FC001/ses-1/func/sub-FC001_ses-1_task-localizer_run-01_bold.json"
+		"/C/Users/ACH/Desktop/fc-bids/sub-FC001/ses-1/anat/sub-FC001_ses-1_run-01_T1w.json"
 	],
 	"find":
 	{
@@ -786,6 +794,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Low_and_High",
 			"experiment",
 			"ax[c]"
 		],
@@ -805,7 +814,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -814,15 +823,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7310,
+						"buffer_size": 7369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7046,
-								7046
+								5052,
+								40
 							]
 						],
 						"settings":
@@ -832,7 +841,35 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2550.28571429,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/ACH/Documents/gPPI/bids_model.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15616,
+								15616
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 7400.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1125,7 +1162,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 164.0,
 	"status_bar_visible": true,
 	"template_settings":
