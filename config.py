@@ -10,7 +10,7 @@ from matplotlib.patches import Patch
 from scipy.stats import iqr
 
 '''settings'''
-sns.set_context('notebook',font_scale=1.4)
+sns.set_context('paper')#,font_scale=1.4)
 sns.set_style('ticks', {'axes.spines.right':False, 'axes.spines.top':False})
 rcParams['font.family'] = 'sans-serif'
 rcParams['font.sans-serif'] = 'Arial'

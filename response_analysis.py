@@ -1,31 +1,35 @@
 from config import *
 
-for exp in [2,4]:
+for exp in ['hennings_2021']:
     experiment = f'Exp_{exp}'
 
-    dfs = {}
-    for file in os.listdir(experiment):
-        if 'phase_4' in file and '.csv' in file:
-            sub = int(file.split('_phase')[0].split('vp_')[1])
-            csp = 'animal' if 'animals' in file else 'tool'
-            dfs[sub] = pd.read_csv(f'{experiment}/{file}')
-            dfs[sub]['subject'] = sub
-            dfs[sub]['condition'] = dfs[sub]['object'].apply(lambda x: 'CS+' if x == csp else 'CS-')
-    df = pd.concat(dfs.values()).reset_index(drop=True)
+    # if type(exp) == int:
+    #     dfs = {}
+    #     for file in os.listdir(experiment):
+    #         if 'phase_4' in file and '.csv' in file:
+    #             sub = int(file.split('_phase')[0].split('vp_')[1])
+    #             csp = 'animal' if 'animals' in file else 'tool'
+    #             dfs[sub] = pd.read_csv(f'{experiment}/{file}')
+    #             dfs[sub]['subject'] = sub
+    #             dfs[sub]['condition'] = dfs[sub]['object'].apply(lambda x: 'CS+' if x == csp else 'CS-')
+    #     df = pd.concat(dfs.values()).reset_index(drop=True)
 
-    #score each trial based on either high or low confidence
-    # df['Low_and_High'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [1,2] else 0)
+        #score each trial based on either high or low confidence
+        # df['Low_and_High'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [1,2] else 0)
 
-    #this block removes all low confidence old responses if you want to just look at high
-    # df['low_con_hit'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [2] else 0)
-    # print(df.low_con_hit.sum())
-    # df = df.drop(index=np.where(df.low_con_hit == 1)[0]).reset_index(drop=True)
+        #this block removes all low confidence old responses if you want to just look at high
+        # df['low_con_hit'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [2] else 0)
+        # print(df.low_con_hit.sum())
+        # df = df.drop(index=np.where(df.low_con_hit == 1)[0]).reset_index(drop=True)
 
-    df['Low'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [2] else 0)
-    df['High'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [1] else 0)
+        # df['Low'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [2] else 0)
+        # df['High'] = df.buttonPressedCertainty.apply(lambda x: 1 if x in [1] else 0)
+        
+        #save here if you wants
+        # df.to_csv(f'{experiment}_data.csv') #save data out here after minimal processing
     
-    #dont save for this
-    # df.to_csv(f'{experiment}_data.csv') #save data out here after minimal processing
+    #read in here instead of doing first block of code everytime
+    df = pd.read_csv(f'{experiment}_data.csv')
 
     avg = df.groupby(['phase','condition','subject'])[['Low','High']].mean() 
     hr = avg.loc[([1,2,3]),].reset_index().set_index(['subject','condition','phase']).sort_index() #hit rate is rate of "old" responses for old items
@@ -74,6 +78,8 @@ for exp in [2,4]:
             star = tstats.loc[phase,'sig'].values[0]
             if len(star) > 0: paired_barplot_annotate_brackets(star,p,(upper[p+0],upper[p+3]),ylim,barh=.025,ax=ax)
 
+        if conf == 'Low':
+            ax.set_ylim((-.4,.85))
         '''since CR is non-normally distributed, we also look at wilcoxon signed-rank test'''
 
         wstats = cr.groupby('phase').apply(lambda x: pg.wilcoxon(x.loc[('CS+'),conf], x.loc[('CS-'),conf]))
